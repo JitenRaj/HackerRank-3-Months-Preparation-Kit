@@ -1,12 +1,11 @@
 package Week01.Day05;
 
-import java.io.*;
 import java.util.*;
 
 public class Solution {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
         Scanner input = new Scanner(System.in);
 
         while(input.hasNext()) {
@@ -21,44 +20,33 @@ public class Solution {
 
         String ans = "";
 
-
         if(input.startsWith("S")) {
 
+            String[] words;
+
             if(input.substring(2).startsWith("M")) {
-
-                String[] words = input.substring(4, input.length()-2)
+                words = input.substring(4, input.length() - 2)
                         .split("(?=[A-Z])");
-                ans = String.join(" ", words).toLowerCase();
-            }
-
-            else if(input.substring(2).startsWith("V")) {
-
-                String[] words = input.substring(4)
-                        .split("(?=[A-Z])");
-                ans = String.join(" ", words).toLowerCase();
-
             }
 
             else {
-
-                String[] words = input.substring(4)
+                words = input.substring(4)
                         .split("(?=[A-Z])");
-                ans = String.join(" ", words).toLowerCase();
-
             }
 
+            ans = String.join(" ", words).toLowerCase();
         }
 
         else {
             String[] words = input.substring(4).split(" ");
 
-            String camelCase = "";
+            StringBuilder camelCase = new StringBuilder();
 
             for (int i = 0; i < words.length; i++) {
                 if (i > 0) {
-                    camelCase += capitalize(words[i]);
+                    camelCase.append(capitalize(words[i]));
                 } else {
-                    camelCase += words[i];
+                    camelCase.append(words[i]);
                 }
             }
 
@@ -68,7 +56,7 @@ public class Solution {
 
             } else if(input.substring(2).startsWith("C")) {
 
-                ans += capitalize(camelCase);
+                ans += capitalize(camelCase.toString());
 
             } else {
                 ans += camelCase;
@@ -79,7 +67,8 @@ public class Solution {
     }
 
     public static String capitalize(String s) {
-        return s.substring(0, 1).toUpperCase() + s.substring(1);
+        return s.substring(0, 1).toUpperCase()
+                + s.substring(1);
     }
 
 }
