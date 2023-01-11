@@ -13,22 +13,28 @@ class Result {
      * The function accepts STRING s as parameter.
      */
 
-public static String pangrams(String s) {
+    public static String pangrams(String s) {
         // Write your code here
-        int len =s.length();
 
         s = s.toLowerCase();
 
-        HashSet<Character> set = new HashSet<>();
+        HashMap<Character,Integer> map = new HashMap<>();
+
+        int len = s.length();
 
         for(int i=0; i < len; i++){
-            set.add(s.charAt(i));
+            map.put(s.charAt(i), 0);
         }
 
-        if(set.size() < 27){
-            return "not pangram";
+        for(int i=0; i < len; i++){
+            map.put(s.charAt(i), map.get(s.charAt(i))+1);
         }
-        else {
+
+        int size = map.size();
+
+        if(size < 27){
+            return "not pangram";
+        } else {
             return "pangram";
         }
     }
