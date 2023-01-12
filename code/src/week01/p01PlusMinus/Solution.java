@@ -1,4 +1,4 @@
-package week01.problem01;
+package week01.p01PlusMinus;
 
 import java.io.*;
 import java.util.*;
