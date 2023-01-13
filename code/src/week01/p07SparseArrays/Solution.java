@@ -1,4 +1,4 @@
-package Week01.Day07;
+package week01.p07SparseArrays;
 
 import java.io.*;
 import java.util.*;
