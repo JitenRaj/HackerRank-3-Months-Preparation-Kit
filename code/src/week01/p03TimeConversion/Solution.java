@@ -1,4 +1,4 @@
-package Week01.Day03;
+package week01.p03TimeConversion;
 
 import java.io.*;
 
