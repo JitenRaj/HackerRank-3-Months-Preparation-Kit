@@ -1,4 +1,4 @@
-package Week01.Day06;
+package week01.p06DivisibleSumPairs;
 
 import java.io.*;
 
