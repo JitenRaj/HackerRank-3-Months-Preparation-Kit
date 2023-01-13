@@ -1,4 +1,4 @@
-package Week01.Day05;
+package week01.p05CamelCase4;
 
 import java.util.*;
 
