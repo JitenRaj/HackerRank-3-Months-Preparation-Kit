@@ -1,4 +1,4 @@
-package Week01.Day04;
+package week01.p04BreakingTheRecords;
 
 import java.io.*;
 import java.util.*;
