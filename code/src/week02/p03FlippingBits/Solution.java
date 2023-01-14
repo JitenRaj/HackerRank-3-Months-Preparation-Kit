@@ -1,4 +1,4 @@
-package Week02.Day03;
+package week02.problem03;
 
 import java.io.*;
 // import java.math.BigInteger;
