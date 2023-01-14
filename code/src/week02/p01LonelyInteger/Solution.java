@@ -1,4 +1,4 @@
-package Week02.Day01;
+package week02.problem01;
 
 import java.io.*;
 import java.util.*;
