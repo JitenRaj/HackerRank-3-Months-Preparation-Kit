@@ -1,4 +1,4 @@
-package week02.problem02;
+package week02.p02GradingStudents;
 
 import java.io.*;
 import java.util.*;
