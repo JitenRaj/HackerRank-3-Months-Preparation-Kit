@@ -1,4 +1,4 @@
-package week02.problem03;
+package week02.p03FlippingBits;
 
 import java.io.*;
 // import java.math.BigInteger;
