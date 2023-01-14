@@ -1,4 +1,4 @@
-package week02.problem01;
+package week02.p01LonelyInteger;
 
 import java.io.*;
 import java.util.*;
