@@ -1,4 +1,4 @@
-package Week02.Day06;
+package week02.p06CountingValleys;
 
 import java.io.*;
 
