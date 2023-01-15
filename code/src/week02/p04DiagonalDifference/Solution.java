@@ -1,4 +1,4 @@
-package Week02.Day04;
+package week02.p04DiagonalDifference;
 
 import java.io.*;
 import java.util.*;
