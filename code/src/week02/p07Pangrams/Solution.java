@@ -1,4 +1,4 @@
-package Week02.Day07;
+package week02.p07Pangrams;
 
 import java.io.*;
 import java.util.*;
